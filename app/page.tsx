@@ -1,11 +1,24 @@
 "use client"
+/* eslint-disable react/no-unescaped-entities */
 
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent } from "@/components/ui/card"
-import { CheckCircle, Shield, Clock, Users, Eye, DollarSign, Star, Lock, ArrowDown, Zap, Target } from "lucide-react"
-import Image from "next/image"
-import { useState, useEffect } from "react"
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  CheckCircle,
+  Shield,
+  Clock,
+  Users,
+  Eye,
+  DollarSign,
+  Star,
+  Lock,
+  ArrowDown,
+  Zap,
+  Target,
+} from "lucide-react";
+import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function PrimeiraVendaOptimized() {
   const [viewersCount, setViewersCount] = useState(847)
@@ -302,7 +315,9 @@ export default function PrimeiraVendaOptimized() {
                       <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-gray-300 mb-6 italic">"{testimonial.content}"</p>
+                  <p className="text-gray-300 mb-6 italic">
+    &quot;{testimonial.content}&quot;
+  </p>
                   <div className="flex items-center">
                     <Image
                       src={testimonial.avatar || "/placeholder.svg"}
